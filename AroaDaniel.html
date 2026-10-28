@@ -1,0 +1,36 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Fantasia</title>
+    <script src="https://aframe.io/releases/1.7.1/aframe.min.js"></script>
+    <script src="dist/aframe-environment-component.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Voces" rel="stylesheet">
+  </head>
+  <body>
+    <a-scene xr-mode-ui="XRMode: xr" environment="preset:egypt">
+
+      <!-- ASSETS: Carga del modelo 3D -->
+      <a-assets>
+            <a-asset-item id="dog" src="chihuahua_derp_dog.glb"></a-asset-item>
+      
+        </a-assets>
+
+
+        <!-- Perro 3D -->
+        <a-entity gltf-model="#dog" position="-3 0 -2" scale="5 5 5" rotation="0 0 0">
+        </a-entity>
+       
+
+       <!-- Si quisiese añadir sonis <a-sound src="gruñido.mp3" autoplay="true" loop="true" volume="1"></a-sound>>-->
+
+      <!-- Cielo -->
+        <a-sky hide-on-enter-ar color="#87CEEB"></a-sky>
+
+
+      
+      
+      
+      
+    </a-scene>
+  </body>
+</html>
